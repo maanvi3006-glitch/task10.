@@ -1,0 +1,129 @@
+2026-07-25 19:52:25,270 | INFO     | __main__ | Removed existing database at C:\Users\maanv\Downloads\placemux_growth (2)\placemux_growth\database\placemux.db
+2026-07-25 19:52:25,461 | INFO     | __main__ | Schema created from C:\Users\maanv\Downloads\placemux_growth (2)\placemux_growth\sql\create_tables.sql
+2026-07-25 19:52:25,867 | INFO     | __main__ | Loaded 42000 rows from users.csv into Users
+2026-07-25 19:52:25,913 | INFO     | __main__ | Loaded 600 rows from companies.csv into Companies
+2026-07-25 19:52:25,976 | INFO     | __main__ | Loaded 5000 rows from jobs.csv into Jobs
+2026-07-25 19:52:29,848 | INFO     | __main__ | Loaded 251627 rows from sessions.csv into Sessions
+2026-07-25 19:52:30,600 | INFO     | __main__ | Loaded 58784 rows from applications.csv into Applications
+2026-07-25 19:52:30,630 | INFO     | __main__ | Loaded 4 rows from experiments.csv into Experiments
+2026-07-25 19:52:31,146 | INFO     | __main__ | Loaded 28500 rows from experiment_assignments.csv into ExperimentAssignments
+2026-07-25 19:52:31,483 | INFO     | __main__ | Loaded 18560 rows from experiment_events.csv into ExperimentEvents
+2026-07-25 19:52:31,953 | INFO     | __main__ | Derived tables (Conversions, Revenue, Retention, Errors) rebuilt from raw events.
+2026-07-25 19:52:31,969 | INFO     | __main__ | Database build complete: C:\Users\maanv\Downloads\placemux_growth (2)\placemux_growth\database\placemux.db
+2026-07-25 19:52:35,785 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:35,979 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:36,032 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:36,032 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:36,033 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:36,044 | INFO     | __main__ | Logged experiment exp_1001 with decision=Ship
+2026-07-25 19:52:36,057 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:36,230 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:36,282 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:36,332 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:36,332 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:36,342 | INFO     | __main__ | Logged experiment exp_1002 with decision=No Ship
+2026-07-25 19:52:36,352 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:36,444 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:36,483 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:36,483 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:36,492 | INFO     | __main__ | Logged experiment exp_1003 with decision=No Ship
+2026-07-25 19:52:36,503 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:36,651 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:36,704 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:36,705 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
+2026-07-25 19:52:36,715 | INFO     | __main__ | Logged experiment exp_1004 with decision=Rollback
+2026-07-25 19:52:39,881 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:40,066 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:40,118 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:40,119 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:40,119 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:40,133 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:40,292 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:40,355 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:40,407 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:40,408 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:40,421 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:40,494 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:40,534 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:40,534 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:40,547 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:40,685 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:40,787 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:40,787 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
+2026-07-25 19:52:40,849 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:41,034 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:41,088 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:41,089 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:41,089 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:41,100 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:41,271 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:41,325 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:41,372 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:41,372 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:41,383 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:41,456 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:41,491 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:41,492 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:41,501 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:41,636 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:41,692 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:41,694 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
+2026-07-25 19:52:41,705 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:41,894 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:41,946 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:41,946 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:41,947 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:41,958 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:42,112 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:42,169 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:42,225 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:42,225 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:42,236 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:42,317 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:42,360 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:42,361 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:42,371 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:42,510 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:42,559 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:42,559 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
+2026-07-25 19:52:54,293 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:54,960 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:55,039 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:55,039 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:55,040 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:55,066 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:55,508 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:55,604 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:55,605 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:55,605 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:55,621 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:55,910 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:55,998 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:56,082 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:56,083 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:56,097 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:56,260 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:56,324 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:56,326 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:56,345 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:56,715 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:56,832 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:56,834 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
+2026-07-25 19:52:57,054 | INFO     | srm_checker | SRM check for exp_1001: control=4502 treatment=4498 chi2=0.0018 p=0.966368 detected=False severity=None
+2026-07-25 19:52:57,707 | INFO     | guardrails | Guardrail crash_rate for exp_1001: control=0.0098 treatment=0.0111 p=0.5310 regression=False (OK)
+2026-07-25 19:52:57,936 | INFO     | guardrails | Guardrail error_rate for exp_1001: control=0.0195 treatment=0.0189 p=0.8224 regression=False (OK)
+2026-07-25 19:52:57,944 | WARNING  | guardrails | No raw event mapping for guardrail metric 'application_success_rate' — skipping.
+2026-07-25 19:52:57,949 | INFO     | experiment_engine | Full readout complete for exp_1001 (primary metric: application_conversion)
+2026-07-25 19:52:57,976 | INFO     | srm_checker | SRM check for exp_1002: control=4320 treatment=4180 chi2=2.3059 p=0.128885 detected=False severity=None
+2026-07-25 19:52:58,664 | INFO     | guardrails | Guardrail cancellation_rate for exp_1002: control=0.0187 treatment=0.0294 p=0.0013 regression=True (Critical)
+2026-07-25 19:52:58,769 | INFO     | guardrails | Guardrail error_rate for exp_1002: control=0.0234 treatment=0.0306 p=0.0392 regression=True (Critical)
+2026-07-25 19:52:58,876 | INFO     | guardrails | Guardrail refund_rate for exp_1002: control=0.0083 treatment=0.0182 p=0.0001 regression=True (Critical)
+2026-07-25 19:52:58,877 | INFO     | experiment_engine | Full readout complete for exp_1002 (primary metric: application_conversion)
+2026-07-25 19:52:58,891 | INFO     | srm_checker | SRM check for exp_1003: control=2028 treatment=1972 chi2=0.7840 p=0.375921 detected=False severity=None
+2026-07-25 19:52:59,033 | INFO     | guardrails | Guardrail error_rate for exp_1003: control=0.0242 treatment=0.0198 p=0.3445 regression=False (OK)
+2026-07-25 19:52:59,115 | INFO     | guardrails | Guardrail bounce_rate for exp_1003: control=0.2830 treatment=0.2982 p=0.2918 regression=False (OK)
+2026-07-25 19:52:59,118 | INFO     | experiment_engine | Full readout complete for exp_1003 (primary metric: application_conversion)
+2026-07-25 19:52:59,137 | INFO     | srm_checker | SRM check for exp_1004: control=4169 treatment=2831 chi2=255.7491 p=0.000000 detected=True severity=High
+2026-07-25 19:52:59,436 | INFO     | guardrails | Guardrail error_rate for exp_1004: control=0.0204 treatment=0.0215 p=0.7392 regression=False (OK)
+2026-07-25 19:52:59,523 | INFO     | guardrails | Guardrail bounce_rate for exp_1004: control=0.3015 treatment=0.2875 p=0.2085 regression=False (OK)
+2026-07-25 19:52:59,524 | INFO     | experiment_engine | Full readout complete for exp_1004 (primary metric: application_conversion)
